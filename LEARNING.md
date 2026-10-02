@@ -54,7 +54,9 @@ Total estimated Review + Do time: ~1114 hours across 19 phases, using ROADMAP.md
 
 ### Next session handoff — 2026-10-02
 
-The **GitHub pull requests and code review** session is complete: practice branch `learning/pr-review` created and pushed with `-u`; PR #1 opened via `gh pr create` on the learner's own fork, targeting that fork's `main`; **merged** (merge commit `ccb6ac88`). The learner fast-forward pulled the PR merge down and completed a full upstream sync (fetch upstream → merge upstream/main → push to fork). A push-rejection caused by skipping the pull step was hit and diagnosed live. Next practical session: the PR review loop below; after that, return to Phase 1 foundation route.
+The **GitHub pull requests and code review** session is complete: practice branch `learning/pr-review` created and pushed with `-u`; PR #1 opened via `gh pr create` on the learner's own fork, targeting that fork's `main`; **merged** (merge commit `ccb6ac88`). The learner fast-forward pulled the PR merge down and completed a full upstream sync (fetch upstream → merge upstream/main → push to fork). A push-rejection caused by skipping the pull step was hit and diagnosed live.
+
+**Next lesson (picked 2026-10-02):** [Phase 1, lesson 01 — Linear Algebra Intuition](phases/01-math-foundations/01-linear-algebra-intuition/docs/en.md). This starts the foundation route. Open the session with the PR #2 warm-up (~10 minutes, below), then teach this lesson. The Phase 14 planning chain (lessons 31 → 36 → 43 → 44, ~4 h total) stays queued for the RAG-agent build; do not start it piecemeal.
 
 Teach interactively here in chat; no advance website reading is expected. The learner runs terminal commands with `!`, and their command output appears in the conversation. Explain unfamiliar commands and flags before using them, pause for predictions, and assess only material actually taught.
 
