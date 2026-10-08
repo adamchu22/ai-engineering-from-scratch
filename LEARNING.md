@@ -51,8 +51,8 @@ CI/CD and broader architecture remain learning priorities; select suitable lesso
 - [x] 00/01 dev-environment — done 3/3 on 2026-10-08
 - [x] 00/02 git-and-collaboration — done 2026-10-01
 - [ ] 00/03 gpu-setup-and-cloud — done 3/3 on 2026-10-08 (Mac: no nvidia-smi, cuda False / mps True; Rust 1.99 + Julia 1.13.1 installed; CPU bench 0.01s @1500)
-- [ ] 00/04 apis-and-keys — NEXT
-- [ ] 00/05 jupyter-notebooks
+- [x] 00/04 apis-and-keys — done 3/3 on 2026-10-08 (no real keys; learner noted secret managers)
+- [ ] 00/05 jupyter-notebooks — NEXT
 - [ ] 00/06 python-environments
 - [ ] 00/07 docker-for-ai
 - [ ] 00/08 editor-setup
@@ -114,7 +114,7 @@ Phase 1 lesson 01 (Linear Algebra Intuition) taught interactively; quiz passed 3
 
 Warm-up partially completed: PR #2 on the fork went through branch, commit, push with `-u`, `gh pr create`, and merge — but the **line-comment → follow-up-commit → CI-checks → merge** loop was skipped (PR merged early; 0 comments, 0 reviews). Two gotchas taught: `gh` defaults to the parent repo (rohitg00's) in fork setups, so `--repo adamchu22/ai-engineering-from-scratch` is mandatory; PR numbers are per-repo, not global.
 
-**Next lesson:** 00/04 apis-and-keys (00/03 done 3/3).
+**Next lesson:** 00/05 jupyter-notebooks (00/04 done 3/3).
 
 Teach interactively here in chat; no advance website reading is expected. The learner runs terminal commands with `!`, and their command output appears in the conversation. Explain unfamiliar commands and flags before using them, pause for predictions, and assess only material actually taught.
 
