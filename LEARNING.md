@@ -50,8 +50,8 @@ CI/CD and broader architecture remain learning priorities; select suitable lesso
 ### Order to teach — top to bottom, one by one (Plan v3, 2026-10-08; finishes current phase before next unless learner says skip)
 - [x] 00/01 dev-environment — done 3/3 on 2026-10-08
 - [x] 00/02 git-and-collaboration — done 2026-10-01
-- [ ] 00/03 gpu-setup-and-cloud — NEXT
-- [ ] 00/04 apis-and-keys
+- [ ] 00/03 gpu-setup-and-cloud — done 3/3 on 2026-10-08 (Mac: no nvidia-smi, cuda False / mps True; Rust 1.99 + Julia 1.13.1 installed; CPU bench 0.01s @1500)
+- [ ] 00/04 apis-and-keys — NEXT
 - [ ] 00/05 jupyter-notebooks
 - [ ] 00/06 python-environments
 - [ ] 00/07 docker-for-ai
@@ -114,7 +114,7 @@ Phase 1 lesson 01 (Linear Algebra Intuition) taught interactively; quiz passed 3
 
 Warm-up partially completed: PR #2 on the fork went through branch, commit, push with `-u`, `gh pr create`, and merge — but the **line-comment → follow-up-commit → CI-checks → merge** loop was skipped (PR merged early; 0 comments, 0 reviews). Two gotchas taught: `gh` defaults to the parent repo (rohitg00's) in fork setups, so `--repo adamchu22/ai-engineering-from-scratch` is mandatory; PR numbers are per-repo, not global.
 
-**Next lesson:** back to Phase 00 order per learner 2026-10-08 — next is 03-gpu-setup-and-cloud (01 done 3/3, 02 done earlier). 01/02 paused, not mastered.
+**Next lesson:** 00/04 apis-and-keys (00/03 done 3/3).
 
 Teach interactively here in chat; no advance website reading is expected. The learner runs terminal commands with `!`, and their command output appears in the conversation. Explain unfamiliar commands and flags before using them, pause for predictions, and assess only material actually taught.
 
