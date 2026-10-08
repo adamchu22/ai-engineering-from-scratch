@@ -52,8 +52,8 @@ CI/CD and broader architecture remain learning priorities; select suitable lesso
 - [x] 00/02 git-and-collaboration — done 2026-10-01
 - [ ] 00/03 gpu-setup-and-cloud — done 3/3 on 2026-10-08 (Mac: no nvidia-smi, cuda False / mps True; Rust 1.99 + Julia 1.13.1 installed; CPU bench 0.01s @1500)
 - [x] 00/04 apis-and-keys — done 3/3 on 2026-10-08 (no real keys; learner noted secret managers)
-- [ ] 00/05 jupyter-notebooks — NEXT
-- [ ] 00/06 python-environments
+- [x] 00/05 jupyter-notebooks — done 3/3 on 2026-10-08 (Zed + terminal-agent workflow; %timeit line-mean vs %%time cell-total; cell != file)
+- [ ] 00/06 python-environments — NEXT
 - [ ] 00/07 docker-for-ai
 - [ ] 00/08 editor-setup
 - [ ] 00/09 data-management
@@ -134,6 +134,7 @@ The learner understands branch versions, local versus remote history, staging sn
 | 2026-10-05 | 01-math-foundations/01-linear-algebra-intuition | 3/3 | First foundation lesson. Hit a wall on "matrix as transformation" metaphors — re-taught with controlled language (ASD-STE100 style): matrix = table, op = dot each row, geometry words as labels afterward. Then ran everything by hand and in NumPy. Strong self-synthesis of training-as-number-nudging. LoRA taught just-in-time before quiz (rank was taught in-session; LoRA was not). Warm-up PR #2 merged early, skipping the comment/CI practice — parked as PR #3 for next session. Quiz option A flagged as too dense by learner; keep quiz phrasing plainer going forward. |
 | 2026-10-08 | GitHub PR #3 full review loop (tutor-directed extension) | — | Branch `learning/pr-review-3`, 2 commits; line comment vs general discussion taught and practiced; author-approval block noted; follow-up commit auto-updated the PR; CI path-filter lesson (zero checks on practice files is correct); merged (`e418a556`); pulled; deleted branch local + remote. Plan v2 committed in the same session. |
 | 2026-10-08 | 00-setup-and-tooling/01-dev-environment | 3/3 | Python 3.14.7, Node v22.22.3, uv + pnpm present, NumPy 2.4.6, torch 2.13.0. Built `/tmp/env-demo` venv with uv, proved isolation (system has NumPy, venv does not). MPS check True + test tensor op (sum 9.0). Rust + Julia deferred (install when a later lesson needs them). Quiz: venv why, layer order, MPS check — all correct. |
+| 2026-10-08 | 00-setup-and-tooling/05-jupyter-notebooks | 3/3 | Zed + terminal-agent workflow kept; browser Lab via uvx. Hit PEP 668 system-pip block, fixed with uvx. Needed re-teach: %timeit line-mean for small ops vs %%time cell-total for slow cells; cell != file; cross-cell timing via new cell or perf_counter. |
 
 ## Review queue
 
