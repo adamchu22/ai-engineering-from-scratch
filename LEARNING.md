@@ -7,6 +7,8 @@
 
 My first build goal is an agent using a RAG product. My side project is a better badge-scanning app using ASR and OCR to capture leads at events. I want both a user-facing tool with prompt-configured CRM connections and an integration that customers' own agents can configure and use within their systems.
 
+Goal statement refined 2026-10-05 (learner's own words): become better at vibe coding, agent building, and infrastructure design fundamentals, to build better products and services. The plan is built from that statement; theory phases are chosen on demand, never as a gate.
+
 Immediate priorities: project planning with AI, architecture judgment, Git, CI/CD, and reliable delivery. Start at 2 hours/week; potentially increase to 5. Prefer quick practical improvements applied to my projects, with planning habits useful beyond coding.
 
 Tutor guidance: distinguish AI foundation placement from software engineering ability. The quiz does not assess architecture, Git, CI/CD, or AI-assisted project planning. Preserve the foundation route below, but offer targeted practical sessions early rather than treating all model-training material as a prerequisite for these goals. Do not mark skipped or unstudied lessons as mastered.
@@ -27,58 +29,78 @@ CI/CD and broader architecture remain learning priorities; select suitable lesso
 - Interpretation: Foundation recommendation from the course rubric. Applied AI concepts are stronger than math and model-training foundations; this short quiz does not establish practical mastery.
 
 ## Path
-| Phase | Name | Status | Est. hours |
-|-------|------|--------|------------|
-| 0 | Setup & Tooling | Skip | -- |
-| 1 | Math Foundations | Do | 23 |
-| 2 | ML Fundamentals | Do | 21 |
-| 3 | Deep Learning Core | Do | 15 |
-| 4 | Computer Vision | Do | 27 |
-| 5 | NLP | Do | 30 |
-| 6 | Speech & Audio | Do | 18 |
-| 7 | Transformers Deep Dive | Do | 14 |
-| 8 | Generative AI | Do | 14 |
-| 9 | Reinforcement Learning | Do | 13 |
-| 10 | LLMs from Scratch | Do | 26 |
-| 11 | LLM Engineering | Do | 19 |
-| 12 | Multimodal AI | Do | 65 |
-| 13 | Tools & Protocols | Do | 43 |
-| 14 | Agent Engineering | Do | 55 |
-| 15 | Autonomous Systems | Do | 20 |
-| 16 | Multi-Agent & Swarms | Do | 28 |
-| 17 | Infrastructure & Production | Do | 32 |
-| 18 | Ethics, Safety & Alignment | Do | 31 |
-| 19 | Capstone Projects | Do | 620 |
 
-Total estimated Review + Do time: ~1114 hours across 19 phases, using ROADMAP.md estimates. This is the full curriculum, including 620 capstone hours, not the time required to improve the current projects. Targeted lessons above are included in phase estimates except the skipped Phase 0 refresher. No Review rows apply because both NLP phases are already Do.
+**Plan v2 — rewritten 2026-10-05 at the learner's direction.** Goal: build better products and services — vibe coding, agent building, infrastructure design fundamentals. Theory-heavy phases are deliberately skipped; cherry-picking across phases matches how the site's own learning paths are built. The original placement-driven foundation table is retired (learner chose practical-first after reviewing the site's learning paths).
+
+| Order | Phase | Slice | Status | Est. hours |
+|-------|-------|-------|--------|------------|
+| 1 | 00 Setup & Tooling | all 11 lessons (02-Git done 2026-10-01) | In progress | ~11 |
+| 2 | 01 Math Foundations | 01-linear-algebra-intuition done (2026-10-05, 3/3) + 4 confirmed must-do lessons below | In progress | ~4 |
+| 3 | 02 ML Fundamentals | 3 must-do lessons (confirmed below) | Planned | ~4 |
+| 4 | 09 Reinforcement Learning | 2 must-do lessons (confirmed below) | Planned | ~2 |
+| 5 | 10 LLMs from Scratch | 10-evaluation, 14-open-models; optional 11-quantization, 12-inference-optimization | Planned | ~3 |
+| 6 | 11 LLM Engineering | all 17 lessons | Planned | 19 |
+| 7 | 13 Tools & Protocols | all 31 lessons | Planned | 43 |
+| 8 | 14 Agent Engineering | all 54 lessons; recommended spine = `using-coding-agents` path (16 lessons, ~15h), then the rest by interest | Planned | 55 |
+| 9 | 15 Autonomous Systems | split confirmed: 9 build-critical lessons, 13 to reading list | Planned | ~6 |
+| 10 | 16 Multi-Agent & Swarms | all 25 lessons | Planned | 28 |
+| 11 | 17 Infrastructure & Production | all 28 lessons | Planned | 32 |
+| 12 | 19 Capstone Projects | learner's shortlist: autonomous research agent; production RAG chatbot; multi-agent software-engineering team; LLM observability & eval dashboard; GitHub-issue-to-PR autonomous agent; personal AI tutor; eval harness with fixture tasks; end-to-end coding agent on the harness; training loop + evaluation; full evaluation pipeline; result evaluator; critic loop; end-to-end research demo | Planned | — |
+
+### Must-do lessons (confirmed by learner 2026-10-05)
+
+**Phase 01 — math that pays rent in the phases above:**
+- [02-vectors-matrices-operations](phases/01-math-foundations/02-vectors-matrices-operations/docs/en.md) — the working mechanics under every embedding and model layer.
+- [10-dimensionality-reduction](phases/01-math-foundations/10-dimensionality-reduction/docs/en.md) — PCA etc.; inspecting/visualizing embeddings when building RAG and eval dashboards.
+- [14-norms-and-distances](phases/01-math-foundations/14-norms-and-distances/docs/en.md) — cosine/L2 distance; the arithmetic RAG runs on every retrieval call.
+- [06-probability-and-distributions](phases/01-math-foundations/06-probability-and-distributions/docs/en.md) — makes temperature, sampling, and eval metrics readable.
+
+**Phase 02 — the practical ML spine:**
+- [01-what-is-machine-learning](phases/02-ml-fundamentals/01-what-is-machine-learning/docs/en.md) — vocabulary shared with 10/06-SFT and every eval discussion.
+- [08-feature-engineering](phases/02-ml-fundamentals/08-feature-engineering/docs/en.md) — turning domain knowledge into structured inputs; the same muscle as context engineering.
+- [09-model-evaluation](phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) — precision/recall/F1/ROC/confusion matrix — the most load-bearing lesson for the eval-heavy capstones.
+
+**Phase 09 — only two lessons:**
+- [01-mdps-states-actions-rewards](phases/09-reinforcement-learning/01-mdps-states-actions-rewards/docs/en.md) — the state/action/reward vocabulary behind every agent design.
+- [09-reward-modeling-rlhf](phases/09-reinforcement-learning/09-reward-modeling-rlhf/docs/en.md) — how models get tuned to be helpful; pairs with 10/08-DPO when fine-tuning comes up.
+
+**Phase 15 split (confirmed):**
+- Keep as lessons: 01-long-horizon-agents, 09-coding-agent-landscape, 10-claude-code-permission-modes, 11-browser-agents, 12-durable-execution, 13-cost-governors, 14-kill-switches-canaries, 15-propose-then-commit, 16-checkpoints-rollback.
+- Reading list (frontier/safety case studies, low direct build value): 02, 03, 04, 05, 06, 07, 08, 17, 18, 19, 20, 21, 22.
+
+**Optional later (pull only when a build demands it):** 01/05-chain-rule-and-autodiff (before any training-loop capstone), 01/09-information-theory, 01/12-tensor-operations, 01/13-numerical-stability, 02/02-linear-regression, 02/03-logistic-regression, 02/06-knn-and-distances, 02/07-unsupervised-learning, 02/10-bias-variance, 02/13-ml-pipelines, 02/17-imbalanced-data, 10/11-quantization, 10/12-inference-optimization.
+
+Standing rule from placement, unchanged: never mark skipped or unstudied lessons as mastered.
 
 ### Next session handoff — 2026-10-02
 
 The **GitHub pull requests and code review** session is complete: practice branch `learning/pr-review` created and pushed with `-u`; PR #1 opened via `gh pr create` on the learner's own fork, targeting that fork's `main`; **merged** (merge commit `ccb6ac88`). The learner fast-forward pulled the PR merge down and completed a full upstream sync (fetch upstream → merge upstream/main → push to fork). A push-rejection caused by skipping the pull step was hit and diagnosed live.
 
-**Next lesson (picked 2026-10-02):** [Phase 1, lesson 01 — Linear Algebra Intuition](phases/01-math-foundations/01-linear-algebra-intuition/docs/en.md). This starts the foundation route. Open the session with the PR #2 warm-up (~10 minutes, below), then teach this lesson. The Phase 14 planning chain (lessons 31 → 36 → 43 → 44, ~4 h total) stays queued for the RAG-agent build; do not start it piecemeal.
+### Next session handoff — 2026-10-05
+
+Phase 1 lesson 01 (Linear Algebra Intuition) taught interactively; quiz passed 3/3. Teaching notes: matrix concept needed one re-explanation — learner explicitly wants **ASD-STE100-style controlled definitions** (plain words, short sentences, arithmetic first, geometry vocabulary only as a label after the computation is owned). That sequence worked: dot product → matrix@vector → "one dot product per row" → rank via build-from → NumPy use-it all landed. Learner independently synthesized: training = per-number nudges, model memory = table numbers, retrieval = dot products. Scratch scripts ran live under `/tmp/` (Python 3.14, NumPy 2.4.6; Julia not installed — Julia lesson blocks skipped).
+
+Warm-up partially completed: PR #2 on the fork went through branch, commit, push with `-u`, `gh pr create`, and merge — but the **line-comment → follow-up-commit → CI-checks → merge** loop was skipped (PR merged early; 0 comments, 0 reviews). Two gotchas taught: `gh` defaults to the parent repo (rohitg00's) in fork setups, so `--repo adamchu22/ai-engineering-from-scratch` is mandatory; PR numbers are per-repo, not global.
+
+**Next lesson:** Phase 00 lesson 01 — [Dev Environment](phases/00-setup-and-tooling/01-dev-environment/docs/en.md), unit 1 of plan v2 (PR #3 warm-up complete 2026-10-08 — see handoff below; teach the lesson next). Must-do shortlists and the Phase 15 split were confirmed by the learner on 2026-10-05.
 
 Teach interactively here in chat; no advance website reading is expected. The learner runs terminal commands with `!`, and their command output appears in the conversation. Explain unfamiliar commands and flags before using them, pause for predictions, and assess only material actually taught.
 
-Next exercise, confined to the learner's fork (PR #2, ~10 minutes):
-1. Branch `learning/pr-review-2`, make one small change (e.g. append a line to `learning-pr-practice.md`), commit, push.
-2. Open PR #2 via `gh pr create` against the fork's `main`.
-3. Leave a line comment on the changed file in the diff; explain line comments versus general discussion, and that GitHub does not let an author approve their own PR.
-4. Make a follow-up commit responding to that comment, push, and observe the existing PR update automatically — no new PR needed.
-5. Discuss CI checks (the repo's curriculum workflow runs on PRs) and merge choices at beginner level; merge PR #2.
-6. Pull the result locally, optionally delete the practice branch (local and remote with `git push origin --delete`).
+Completed 2026-10-08 as PR #3 (branch `learning/pr-review-3`, merged as `e418a556`): line comment left on the diff, follow-up commit pushed (PR auto-updated 1→2 commits), CI checks discussed (path-filtered workflow → zero checks on practice files is correct), merged, branches deleted local + remote.
 
-Local `main` carries PR #1's merge (`ccb6ac88`) plus the upstream course merge, and is pushed to `origin/main`. `learning-pr-practice.md` exists on `main`; branch `learning/pr-review` exists locally and on the fork. GitHub auth works via `gh` (keyring token, account `adamchu22`). Fork sync ladder the learner can now run independently: `git checkout main` → `git pull` → `git fetch upstream` → `git merge upstream/main` → `git push`.
+Local `main` carries PR #1 (`ccb6ac88`), PR #2 (`200bbf46`), and PR #3 (`e418a556`) merges plus the upstream course sync, and is pushed to `origin/main`. No practice branches remain (local or remote). GitHub auth works via `gh` (keyring token, account `adamchu22`). Fork sync ladder the learner can now run independently: `git checkout main` → `git pull` → `git fetch upstream` → `git merge upstream/main` → `git push`.
 
 The `.claude/skills/` entries were symlinks into `.agents/skills/` (a multi-harness skill-manager setup from 2026-09-30) sitting on Git-tracked paths, so every operation that tried to snapshot the worktree failed with "beyond a symbolic link" and blocked merges. Fixed on 2026-10-02: links deleted, tracked files restored with `git checkout -- .claude/skills`, handoff committed. The `.agents/skills/` copies were left intact. If the skill manager re-creates the links and pulls break again, reconcile the manager/skills-lock config rather than hiding paths from Git.
 
-The learner understands branch versions, local versus remote history, staging snapshots, `checkout -b` versus `checkout`, fetch versus pull, fast-forward pulls, and why push rejects when the remote is ahead. The tutor introduced `checkout -b` and model file formats only after unfair quiz questions; do not record those as incorrect independent assessments. Still needs hands-on practice: line comments and reviews, follow-up commits on a live PR, CI checks, merge styles, and PR branch cleanup.
+The learner understands branch versions, local versus remote history, staging snapshots, `checkout -b` versus `checkout`, fetch versus pull, fast-forward pulls, and why push rejects when the remote is ahead. The tutor introduced `checkout -b` and model file formats only after unfair quiz questions; do not record those as incorrect independent assessments. Still needs hands-on practice: merge styles (only merge-commit used so far; squash/rebase untouched).
 
 ## Progress log
 | Date | Lesson | Quiz | Note |
 |------|--------|------|------|
 | 2026-10-01 | 00-setup-and-tooling/02-git-and-collaboration | 1/1 fairly assessed; 2 further questions explained, unscored | Requested detour from foundation route. Completed staging, commits, branch switching, fast-forward merge, fork/remotes, and push. Corrected push-before-commit confusion. Covered ignore/untracking conceptually; no ignore-file exercise run. Tutor introduced checkout -b and model file formats only after quiz questions; revisit these in a future warm-up without treating this as learner failure. |
 | 2026-10-02 | GitHub PR & code-review practice (tutor-directed extension) | — | Opened PR #1 via `gh pr create` on own fork and merged it; learned push ≠ PR creation and PRs live at repo level; fast-forward pull brought the merge down; diagnosed self-caused push rejection (skipped pull); learned fetch vs pull and per-branch sync; synced fork with upstream. Fixed `.claude/skills` symlink collision that blocked all merges. |
+| 2026-10-05 | 01-math-foundations/01-linear-algebra-intuition | 3/3 | First foundation lesson. Hit a wall on "matrix as transformation" metaphors — re-taught with controlled language (ASD-STE100 style): matrix = table, op = dot each row, geometry words as labels afterward. Then ran everything by hand and in NumPy. Strong self-synthesis of training-as-number-nudging. LoRA taught just-in-time before quiz (rank was taught in-session; LoRA was not). Warm-up PR #2 merged early, skipping the comment/CI practice — parked as PR #3 for next session. Quiz option A flagged as too dense by learner; keep quiz phrasing plainer going forward. |
+| 2026-10-08 | GitHub PR #3 full review loop (tutor-directed extension) | — | Branch `learning/pr-review-3`, 2 commits; line comment vs general discussion taught and practiced; author-approval block noted; follow-up commit auto-updated the PR; CI path-filter lesson (zero checks on practice files is correct); merged (`e418a556`); pulled; deleted branch local + remote. Plan v2 committed in the same session. |
 
 ## Review queue
 
