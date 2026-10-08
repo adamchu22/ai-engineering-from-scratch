@@ -45,7 +45,39 @@ CI/CD and broader architecture remain learning priorities; select suitable lesso
 | 9 | 15 Autonomous Systems | split confirmed: 9 build-critical lessons, 13 to reading list | Planned | ~6 |
 | 10 | 16 Multi-Agent & Swarms | all 25 lessons | Planned | 28 |
 | 11 | 17 Infrastructure & Production | all 28 lessons | Planned | 32 |
-| 12 | 19 Capstone Projects | learner's shortlist: autonomous research agent; production RAG chatbot; multi-agent software-engineering team; LLM observability & eval dashboard; GitHub-issue-to-PR autonomous agent; personal AI tutor; eval harness with fixture tasks; end-to-end coding agent on the harness; training loop + evaluation; full evaluation pipeline; result evaluator; critic loop; end-to-end research demo | Planned | — |
+| 12 | 19 Capstone Projects | learner's shortlist (see below) | Planned | — |
+
+### Order to teach — top to bottom, one by one (Plan v3, 2026-10-08; finishes current phase before next unless learner says skip)
+- [x] 00/01 dev-environment — done 3/3 on 2026-10-08
+- [x] 00/02 git-and-collaboration — done 2026-10-01
+- [ ] 00/03 gpu-setup-and-cloud — NEXT
+- [ ] 00/04 apis-and-keys
+- [ ] 00/05 jupyter-notebooks
+- [ ] 00/06 python-environments
+- [ ] 00/07 docker-for-ai
+- [ ] 00/08 editor-setup
+- [ ] 00/09 data-management
+- [ ] 00/10 terminal-and-shell
+- [ ] 00/11 linux-for-ai
+- [ ] 00/12 debugging-and-profiling
+- [x] 01/01 linear-algebra-intuition — done 3/3 on 2026-10-05
+- [ ] 01/02 vectors-matrices-operations — paused 2026-10-08 at learner request, not mastered
+- [ ] 01/10 dimensionality-reduction
+- [ ] 01/14 norms-and-distances
+- [ ] 01/06 probability-and-distributions
+- [ ] 02/01 what-is-machine-learning
+- [ ] 02/08 feature-engineering
+- [ ] 02/09 model-evaluation
+- [ ] 09/01 mdps-states-actions-rewards
+- [ ] 09/09 reward-modeling-rlhf
+- [ ] Phase 10: 10-evaluation, 14-open-models (11, 12 only if build needs it)
+- [ ] Phase 11: all 17 lessons
+- [ ] Phase 13: all 31 lessons
+- [ ] Phase 14: all 54 lessons
+- [ ] Phase 15 keep as lessons: 01, 09, 10, 11, 12, 13, 14, 15, 16 (rest reading list)
+- [ ] Phase 16: all 25 lessons
+- [ ] Phase 17: all 28 lessons
+- [ ] Phase 19: learner shortlist only
 
 ### Must-do lessons (confirmed by learner 2026-10-05)
 
@@ -82,7 +114,7 @@ Phase 1 lesson 01 (Linear Algebra Intuition) taught interactively; quiz passed 3
 
 Warm-up partially completed: PR #2 on the fork went through branch, commit, push with `-u`, `gh pr create`, and merge — but the **line-comment → follow-up-commit → CI-checks → merge** loop was skipped (PR merged early; 0 comments, 0 reviews). Two gotchas taught: `gh` defaults to the parent repo (rohitg00's) in fork setups, so `--repo adamchu22/ai-engineering-from-scratch` is mandatory; PR numbers are per-repo, not global.
 
-**Next lesson:** Phase 01 lesson 02 — [Vectors & Matrices Operations](phases/01-math-foundations/02-vectors-matrices-operations/docs/en.md), next on the Phase 01 must-do shortlist. Teach with ASD-STE100 controlled definitions (plain words, short sentences, arithmetic first).
+**Next lesson:** back to Phase 00 order per learner 2026-10-08 — next is 03-gpu-setup-and-cloud (01 done 3/3, 02 done earlier). 01/02 paused, not mastered.
 
 Teach interactively here in chat; no advance website reading is expected. The learner runs terminal commands with `!`, and their command output appears in the conversation. Explain unfamiliar commands and flags before using them, pause for predictions, and assess only material actually taught.
 
